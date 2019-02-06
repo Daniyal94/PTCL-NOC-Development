@@ -1,0 +1,13 @@
+############     GENERATE SMS
+
+my @cmmnd = `telalertc -host 10.254.170.165 -cpl SMPP 923345380195 923438502028 -m "CRM integration is working fine"`;
+print "\n ok @cmmnd";		
+}	
+	else
+{
+my @cmmnd = `telalertc -host 10.254.170.165 -cpl SMPP 923345380195 923438502028 -m "CRM integration is not working fine"`;
+print "\n oknot @cmmnd";
+}
+	close ($log);
+	
+exit(0);
